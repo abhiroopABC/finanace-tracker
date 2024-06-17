@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+  source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.0"
@@ -64,6 +64,10 @@ group :development do
   # gem "spring"
 end
 
+# group :production do
+#   gem 'pg'
+# end
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
@@ -71,3 +75,5 @@ group :test do
   gem "webdrivers"
 
 end
+
+gem "devise", "~> 4.9"
